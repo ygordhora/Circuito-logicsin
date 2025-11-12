@@ -3,7 +3,7 @@
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-10-07T20:08:24.784-03:00",
-  "LastSaveTime": "2025-11-04T20:48:46.350-03:00",
+  "LastSaveTime": "2025-11-11T20:32:20.766-03:00",
   "Prefs_MainPinNamesDisplayMode": 0,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 0,
@@ -20,7 +20,11 @@
     "XOR",
     "XNOR",
     "4-bit-adder",
-    "Half-subtractor"
+    "Half-subtractor",
+    "Full-Subtractor",
+    "3-XOR",
+    "3-AND",
+    "Fake-Full-Sub"
   ],
   "StarredList":[
     {
@@ -41,6 +45,14 @@
     },
     {
       "Name":"Half-subtractor",
+      "IsCollection":false
+    },
+    {
+      "Name":"Full-Subtractor",
+      "IsCollection":false
+    },
+    {
+      "Name":"Fake-Full-Sub",
       "IsCollection":false
     }
   ],
@@ -76,12 +88,12 @@
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUZZER"],
+      "Chips":["BUZZER","4-bit-adder","Half-subtractor","Full-Subtractor"],
       "IsToggledOpen":true,
       "Name":"OTHER"
     },
     {
-      "Chips":["Not","AND","NAND","OR","NOR","XOR","XNOR"],
+      "Chips":["Not","AND","3-AND","NAND","OR","NOR","XOR","3-XOR","XNOR"],
       "IsToggledOpen":true,
       "Name":"BasicGates"
     }
